@@ -1,4 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
-})
+	app: {
+		baseURL: "/nuxt-demo",
+	},
+	ssr: false,
+	typescript: {
+		strict: true,
+		typeCheck: true,
+	},
+	experimental: {
+		payloadExtraction: false,
+	},
+});
